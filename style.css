@@ -385,4 +385,10 @@ header{background:#fffaf4}
 .present .prize-line-spaced>span:first-child{justify-self:end;text-align:right}
 .present .prize-line-spaced strong{justify-self:center;text-align:center}
 .present .prize-line-spaced>span:last-child{justify-self:start;text-align:left}
-@media(max-width:480px){.present .prize-line-spaced{column-gap:4px;font-size:clamp(9px,2.5vw,12px)}.present .prize-line-spaced strong{font-size:clamp(20px,5vw,24px)}}
+@media(max-width:480px){.present .prize-line-spaced{column-gap:4px;font-size:clamp(9px,2.5vw,12px)}.present .prize-line-spaced strong{font-size:clamp(20px,5vw,24px)}}/* Fit the full photograph vertically; clip only the source's white side margins. */
+.hero-stage.bloom-renewal .renewal-photo.user-artwork-v4{width:min(100%,450px);height:auto;aspect-ratio:620/940;max-height:none;justify-self:center;align-self:center;overflow:hidden}
+.hero-stage.bloom-renewal .renewal-photo.user-artwork-v4 img{position:absolute;top:0;bottom:auto;left:50%;right:auto;width:auto;max-width:none;height:100%;object-fit:contain;transform:translateX(-50%);animation:hero-full-photo-reveal 2.2s ease 4s both}
+@keyframes hero-full-photo-reveal{from{opacity:.35;filter:blur(12px)}to{opacity:1;filter:blur(0)}}
+@media(min-width:701px) and (max-width:1050px){.hero-stage.bloom-renewal .renewal-photo.user-artwork-v4{width:min(100%,380px)}}
+@media(max-width:700px){.hero-stage.bloom-renewal .renewal-photo.user-artwork-v4{width:min(76%,330px)}}
+@media(prefers-reduced-motion:reduce){.hero-stage.bloom-renewal .renewal-photo.user-artwork-v4 img{animation:none}}
