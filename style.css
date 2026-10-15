@@ -392,3 +392,25 @@ header{background:#fffaf4}
 @media(min-width:701px) and (max-width:1050px){.hero-stage.bloom-renewal .renewal-photo.user-artwork-v4{width:min(100%,380px)}}
 @media(max-width:700px){.hero-stage.bloom-renewal .renewal-photo.user-artwork-v4{width:min(76%,330px)}}
 @media(prefers-reduced-motion:reduce){.hero-stage.bloom-renewal .renewal-photo.user-artwork-v4 img{animation:none}}
+/* Mobile reading layout: separate copy from photography, leaving desktop intact. */
+@media(max-width:700px){
+ header{height:auto;min-height:76px;padding:14px 5%;gap:12px;flex-wrap:wrap}header .wordmark{font-size:25px}header .nav-cta{font-size:11px;white-space:nowrap}
+ .hero-stage.bloom-renewal{display:flex;flex-direction:column;height:auto;min-height:0;padding:28px 6% 30px;gap:22px;overflow:hidden}
+ .hero-stage.bloom-renewal .renewal-season{position:static;writing-mode:horizontal-tb;order:0;margin:0;gap:12px;font-size:12px;letter-spacing:.12em;flex-wrap:wrap;justify-content:center}
+ .hero-stage.bloom-renewal .renewal-season span{font-size:15px;letter-spacing:.12em;border:0;padding:0}
+ .hero-stage.bloom-renewal .renewal-title{position:static!important;writing-mode:horizontal-tb!important;order:1;align-self:center;margin:0!important;font-size:clamp(28px,7.3vw,36px)!important;line-height:1.6!important;text-align:center;text-shadow:none!important;letter-spacing:.08em!important}
+ .hero-stage.bloom-renewal .renewal-photo.user-artwork-v4{order:2;width:min(100%,330px);flex:none;margin:0}
+ .hero-stage.bloom-renewal .renewal-sub{order:3;writing-mode:horizontal-tb;align-self:center;margin:0;text-align:center;font-size:15px;line-height:1.95;letter-spacing:.04em;text-shadow:none}
+ .hero-stage.bloom-renewal .renewal-sign{position:static;order:4;font-size:25px;margin:0;text-align:center}
+ .hero-copy{text-align:center;padding:30px 6%;display:block}.hero-name{font-size:clamp(38px,10.5vw,51px);white-space:normal}.hero .subtitle{font-size:14px;letter-spacing:.03em}
+ .hero .actions{display:flex;flex-direction:column;gap:12px;margin-top:24px;align-items:stretch}.hero .button{width:100%;min-width:0;flex:none;white-space:normal;font-size:14px;padding:15px 18px}
+ .section{padding:60px 6%}h2{font-size:clamp(23px,6.2vw,28px);letter-spacing:.04em;line-height:1.65}h3{line-height:1.7}.section p{overflow-wrap:anywhere}
+ .pair-copy h2,.parfait h2,.reservation h2,.limited h2{font-size:clamp(23px,6.2vw,28px)}
+ .points .three-grid article{padding-left:0;text-align:center}.points .point-number{position:static;display:block;margin:12px auto 0}.points .three-grid .eyebrow{text-align:center}.points .three-grid p:not(.eyebrow){text-align:left}.points h3{font-size:22px}
+ .parfait figure{height:auto;aspect-ratio:2/3}.parfait figcaption{font-size:clamp(19px,5.4vw,23px)}
+ .campaign{padding-top:18px}.campaign-inner{padding:40px 14px;border-radius:40px 40px 6px 6px}.campaign h2{font-size:23px}.campaign-inner>p{font-size:14px;line-height:1.95}
+ .present{padding:26px 10px}.present h3{font-size:clamp(18px,4.7vw,22px);line-height:1.8;overflow-wrap:anywhere}.present p{line-height:1.9}.present .prize-line-spaced{font-size:clamp(9px,2.4vw,12px);column-gap:4px}.present .prize-line-spaced strong{font-size:clamp(18px,5vw,24px)}
+ .period{font-size:13px;gap:8px}.period strong{font-size:clamp(11px,3.1vw,14px)}.campaign .button,.reservation .button,.final .button{width:100%;min-width:0;white-space:normal;gap:12px}.campaign .actions{align-items:stretch}.text-link{line-height:1.8}
+ .product{gap:24px}.product-name{font-size:clamp(38px,10vw,49px)}dl>div{grid-template-columns:72px minmax(0,1fr);gap:12px;font-size:14px}dd{overflow-wrap:anywhere}.product .small{line-height:1.9}
+ .final h2{font-size:30px}.final h3{font-size:18px}footer .wordmark{font-size:34px}footer .wordmark span{white-space:normal}footer>div{flex-wrap:wrap;gap:18px}
+}
